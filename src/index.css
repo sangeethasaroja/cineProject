@@ -1,13 +1,269 @@
-body {
-  margin: 0;
+* {
+  margin: 0px;
+  padding: 0px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+box-sizing: border-box;
+}
+nav{
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+  /* background-color: rgb(102, 173, 219); */
+  background-color: rgb(27, 50, 66);
+  font-style: italic;
+  font-size: 20px;
+}
+#logo h1{
+  border: 40px;
+  border-radius: 50px;
+}
+#logo h1,h6{
+  display: inline;
+  /* font-size: 40px; */
+}
+#logo a{
+  color: rgb(233, 27, 154);
+  text-decoration: none;
+}
+#home a{
+  color: rgb(233, 27, 154);
+  text-decoration: none;
+}
+#add a{
+  color: rgb(233, 27, 154);
+  text-decoration: none;
+}
+#login a{
+  color: rgb(233, 27, 154);
+  text-decoration: none;
+}
+.moviedisplay{
+  padding: 20px 100px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  row-gap: 30px;
+  /* background-color: rgb(189, 186, 186); */
+  background-image: url("https://img.freepik.com/free-photo/movie-background-collage_23-2149876028.jpg");
+}
+.moviedisplay h1{
+ color: white; 
+}
+.moviedisplay h2{
+  color: white; 
+ }
+ .moviedisplay a{
+  text-decoration: none;
+}
+#movie img{
+  width: 220px;
+  height: 280px;
+  text-align: center;
+  padding: 12px;
+  border: solid 0px black;
+  border-radius: 50px;
+  transition: 0.2s;
+}
+#movie:hover img{
+  /* margin-top: -10px; */
+  box-shadow: 0 0 3px rgb(248, 246, 246);
+  transform: translate(0, -10px);
+}
+.moviedetails{
+  /* width: 80vw; */
+  height: auto;
+  margin: auto;
+  font-style: italic;
+  background-color: rgba(177, 175, 174, 0.301);
+}
+.moviedetails iframe{
+  width: 100vw;
+  height: 300px;
+}
+.moviedetails button{
+  position: relative;
+  /* left: 50%; */
+  background-color: rgb(17, 16, 16);
+  /* display: inline; */
+  font-size: 20px;
+  padding: 10px 30px;
+  margin: 10px 0px;
+  border: solid 2px rgb(172, 164, 164);
+  color: white;
+  border-radius: 50px;
+}
+.moviedetails button:hover{
+background-color:white;
+color:black;
+}
+.moviedetails a{
+  text-decoration: none;
+}
+.addmovie{
+  background-color: rgb(178, 178, 201);
+  border: rgb(192, 186, 186) 20px solid;
+  /* height:500px; */
+  /* height: auto; */
+  width: 100vw;
+  height: 100dvh;
+}
+.form1 input{
+  display: block;
+  margin: 30px;
+  height: 30px;
+  width: 400px;
+  border-radius: 10px;
+  padding: 10px;
+}
+.form1 input:focus{
+  background-color: rgb(27, 50, 66);
+  color: white;
+  transition: 0.7s;
+  transform: scale(1.1);
+}
+.form2 input{
+  display: block;
+  margin: 30px;
+  height: 30px;
+  width: 400px;
+  border-radius: 10px;
+  padding: 10px;
+}
+.form2 input:focus{
+  background-color: rgb(27, 50, 66);
+  color: white;
+  transition: 0.7s;
+  transform: scale(1.1);
+}
+.form2{
+position: relative;
+left: 700px;
+bottom: 340px;
+
+}
+.form1{
+  position: relative;
+  top: 24px;
+  left: 150px;
+}
+.form2 textarea
+{
+  position: relative;
+  right: 420px;
+  width:400px ;
+  border-radius: 10px;
+  border: 2px black;
+}
+.form2 textarea:focus
+{
+  background-color: rgb(27, 50, 66);
+  color: white;
+  transition: 0.7s;
+  transform: scale(1.1);
+}
+#createmovie
+{
+  position: relative;
+  top: 20px;
+  right: 170px;
+  height: 50px;
+  width: 180px;
+}
+#createmovie:hover
+{
+  background-color: rgb(27, 50, 66);
+  color: white;
+  transition: 0.7s;
+  transform: scale(1.2);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* **********update******* */
+.updateMovie{
+  background-color: rgb(178, 178, 201);
+  border: rgb(192, 186, 186) 20px solid;
+  /* height:500px; */
+  /* height: auto; */
+  width: 100vw;
+  height: 100dvh;
 }
+.updateform1 input{
+  display: block;
+  margin: 30px;
+  height: 30px;
+  width: 400px;
+  border-radius: 10px;
+  padding: 10px;
+}
+.updateform1 input:focus{
+  background-color: rgb(27, 50, 66);
+  color: white;
+  transition: 0.7s;
+  transform: scale(1.1);
+}
+.updateform2 input{
+  display: block;
+  margin: 30px;
+  height: 30px;
+  width: 400px;
+  border-radius: 10px;
+  padding: 10px;
+}
+.updateform2 input:focus{
+  background-color: rgb(27, 50, 66);
+  color: white;
+  transition: 0.7s;
+  transform: scale(1.1);
+}
+.updateform2{
+position: relative;
+left: 700px;
+bottom: 360px;
+
+}
+.updateform1{
+  position: relative;
+  top: 6px;
+  left: 150px;
+}
+.updateform2 textarea
+{
+  position: relative;
+  right: 430px;
+  width:400px ;
+  border-radius: 10px;
+  border: 2px black;
+  padding: 10px;
+}
+.updateform2 textarea:focus
+{
+  background-color: rgb(27, 50, 66);
+  color: white;
+  transition: 0.7s;
+  transform: scale(1.1);
+  padding: 10px;
+}
+#updatemovie
+{
+  position: relative;
+  top: 0px;
+  right: 170px;
+  height: 50px;
+  width: 180px;
+}
+#updatemovie:hover
+{
+  background-color: rgb(27, 50, 66);
+  color: white;
+  transition: 0.7s;
+  transform: scale(1.2);
+}
+
